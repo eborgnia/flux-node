@@ -1,6 +1,6 @@
-import { multipartFormRequestOptions, createForm } from 'flux-classify/core';
-import { Blob } from 'flux-classify/_shims/index';
-import { toFile } from 'flux-classify';
+import { multipartFormRequestOptions, createForm } from 'flux-classifyasklngakjwegnkjw/core';
+import { Blob } from 'flux-classifyasklngakjwegnkjw/_shims/index';
+import { toFile } from 'flux-classifyasklngakjwegnkjw';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

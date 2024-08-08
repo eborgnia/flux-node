@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Flux from 'flux-classify';
-import { APIUserAbortError } from 'flux-classify';
-import { Headers } from 'flux-classify/core';
+import Flux from 'flux-classifyasklngakjwegnkjw';
+import { APIUserAbortError } from 'flux-classifyasklngakjwegnkjw';
+import { Headers } from 'flux-classifyasklngakjwegnkjw/core';
 import defaultFetch, { Response, type RequestInit, type RequestInfo } from 'node-fetch';
 
 describe('instantiate client', () => {
