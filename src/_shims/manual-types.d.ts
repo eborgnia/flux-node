@@ -4,8 +4,8 @@
 /**
  * Types will get added to this namespace when you import one of the following:
  *
- *   import 'sunspot-flux/shims/node'
- *   import 'sunspot-flux/shims/web'
+ *   import 'flux-client/shims/node'
+ *   import 'flux-client/shims/web'
  *
  * Importing more than one will cause type and runtime errors.
  */
