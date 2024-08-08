@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { Flux } from 'flux-classifyasklngakjwegnkjw';
+import { Flux } from 'flux-classify';
 
 const { stringifyQuery } = Flux.prototype as any;
 
