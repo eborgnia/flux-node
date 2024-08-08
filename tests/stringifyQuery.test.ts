@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { Flux } from 'sunspot-flux';
+import { Flux } from 'flux-client';
 
 const { stringifyQuery } = Flux.prototype as any;
 

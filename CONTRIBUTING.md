@@ -55,12 +55,12 @@ cd flux-node
 # With yarn
 yarn link
 cd ../my-package
-yarn link sunspot-flux
+yarn link flux-client
 
 # With pnpm
 pnpm link --global
 cd ../my-package
-pnpm link -—global sunspot-flux
+pnpm link -—global flux-client
 ```
 
 ## Running tests

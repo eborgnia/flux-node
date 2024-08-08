@@ -1,6 +1,6 @@
-import { multipartFormRequestOptions, createForm } from 'sunspot-flux/core';
-import { Blob } from 'sunspot-flux/_shims/index';
-import { toFile } from 'sunspot-flux';
+import { multipartFormRequestOptions, createForm } from 'flux-client/core';
+import { Blob } from 'flux-client/_shims/index';
+import { toFile } from 'flux-client';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
