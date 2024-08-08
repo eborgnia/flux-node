@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { toFile, type ResponseLike } from 'flux-client/uploads';
-import { File } from 'flux-client/_shims/index';
+import { toFile, type ResponseLike } from 'flux-classify/uploads';
+import { File } from 'flux-classify/_shims/index';
 
 class MyClass {
   name: string = 'foo';
