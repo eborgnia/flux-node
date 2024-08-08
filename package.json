@@ -59,8 +59,8 @@
     "./shims/web.mjs"
   ],
   "imports": {
-    "flux-client": ".",
-    "flux-client/*": "./src/*"
+    "flux-classify": ".",
+    "flux-classify/*": "./src/*"
   },
   "exports": {
     "./_shims/auto/*": {
