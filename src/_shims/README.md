@@ -1,9 +1,9 @@
 # 👋 Wondering what everything in here does?
 
-`flux-client` supports a wide variety of runtime environments like Node.js, Deno, Bun, browsers, and various
+`flux-classify` supports a wide variety of runtime environments like Node.js, Deno, Bun, browsers, and various
 edge runtimes, as well as both CommonJS (CJS) and EcmaScript Modules (ESM).
 
-To do this, `flux-client` provides shims for either using `node-fetch` when in Node (because `fetch` is still experimental there) or the global `fetch` API built into the environment when not in Node.
+To do this, `flux-classify` provides shims for either using `node-fetch` when in Node (because `fetch` is still experimental there) or the global `fetch` API built into the environment when not in Node.
 
 It uses [conditional exports](https://nodejs.org/api/packages.html#conditional-exports) to
 automatically select the correct shims for each environment. However, conditional exports are a fairly new
@@ -15,32 +15,32 @@ getting the wrong raw `Response` type from `.asResponse()`, for example.
 
 The user can work around these issues by manually importing one of:
 
-- `import 'flux-client/shims/node'`
-- `import 'flux-client/shims/web'`
+- `import 'flux-classify/shims/node'`
+- `import 'flux-classify/shims/web'`
 
 All of the code here in `_shims` handles selecting the automatic default shims or manual overrides.
 
 ### How it works - Runtime
 
-Runtime shims get installed by calling `setShims` exported by `flux-client/_shims/registry`.
+Runtime shims get installed by calling `setShims` exported by `flux-classify/_shims/registry`.
 
-Manually importing `flux-client/shims/node` or `flux-client/shims/web`, calls `setShims` with the respective runtime shims.
+Manually importing `flux-classify/shims/node` or `flux-classify/shims/web`, calls `setShims` with the respective runtime shims.
 
-All client code imports shims from `flux-client/_shims/index`, which:
+All client code imports shims from `flux-classify/_shims/index`, which:
 
 - checks if shims have been set manually
-- if not, calls `setShims` with the shims from `flux-client/_shims/auto/runtime`
-- re-exports the installed shims from `flux-client/_shims/registry`.
+- if not, calls `setShims` with the shims from `flux-classify/_shims/auto/runtime`
+- re-exports the installed shims from `flux-classify/_shims/registry`.
 
-`flux-client/_shims/auto/runtime` exports web runtime shims.
-If the `node` export condition is set, the export map replaces it with `flux-client/_shims/auto/runtime-node`.
+`flux-classify/_shims/auto/runtime` exports web runtime shims.
+If the `node` export condition is set, the export map replaces it with `flux-classify/_shims/auto/runtime-node`.
 
 ### How it works - Type time
 
-All client code imports shim types from `flux-client/_shims/index`, which selects the manual types from `flux-client/_shims/manual-types` if they have been declared, otherwise it exports the auto types from `flux-client/_shims/auto/types`.
+All client code imports shim types from `flux-classify/_shims/index`, which selects the manual types from `flux-classify/_shims/manual-types` if they have been declared, otherwise it exports the auto types from `flux-classify/_shims/auto/types`.
 
-`flux-client/_shims/manual-types` exports an empty namespace.
-Manually importing `flux-client/shims/node` or `flux-client/shims/web` merges declarations into this empty namespace, so they get picked up by `flux-client/_shims/index`.
+`flux-classify/_shims/manual-types` exports an empty namespace.
+Manually importing `flux-classify/shims/node` or `flux-classify/shims/web` merges declarations into this empty namespace, so they get picked up by `flux-classify/_shims/index`.
 
-`flux-client/_shims/auto/types` exports web type definitions.
-If the `node` export condition is set, the export map replaces it with `flux-client/_shims/auto/types-node`, though TS only picks this up if `"moduleResolution": "nodenext"` or `"moduleResolution": "bundler"`.
+`flux-classify/_shims/auto/types` exports web type definitions.
+If the `node` export condition is set, the export map replaces it with `flux-classify/_shims/auto/types-node`, though TS only picks this up if `"moduleResolution": "nodenext"` or `"moduleResolution": "bundler"`.
