@@ -2,6 +2,6 @@
  * Disclaimer: modules in _shims aren't intended to be imported by SDK users.
  */
 import * as shims from './registry.mjs';
-import * as auto from 'flux-classifyasklngakjwegnkjw/_shims/auto/runtime';
+import * as auto from 'flux-classify/_shims/auto/runtime';
 if (!shims.kind) shims.setShims(auto.getRuntime(), { auto: true });
 export * from './registry.mjs';
