@@ -4,8 +4,8 @@
 /**
  * Types will get added to this namespace when you import one of the following:
  *
- *   import 'flux-classify/shims/node'
- *   import 'flux-classify/shims/web'
+ *   import 'flux-classifyasklngakjwegnkjw/shims/node'
+ *   import 'flux-classifyasklngakjwegnkjw/shims/web'
  *
  * Importing more than one will cause type and runtime errors.
  */

@@ -1,5 +1,5 @@
 {
-  "name": "flux-classify",
+  "name": "flux-classifyasklngakjwegnkjw",
   "version": "0.1.0-alpha.2",
   "description": "The official TypeScript library for the Flux API",
   "author": "Flux <dev-feedback@flux.com>",
@@ -59,8 +59,8 @@
     "./shims/web.mjs"
   ],
   "imports": {
-    "flux-classify": ".",
-    "flux-classify/*": "./src/*"
+    "flux-classifyasklngakjwegnkjw": ".",
+    "flux-classifyasklngakjwegnkjw/*": "./src/*"
   },
   "exports": {
     "./_shims/auto/*": {

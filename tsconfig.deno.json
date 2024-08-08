@@ -6,9 +6,9 @@
     "rootDir": "./deno",
     "lib": ["es2020", "DOM"],
     "paths": {
-      "flux-classify/_shims/auto/*": ["deno/_shims/auto/*-deno"],
-      "flux-classify/*": ["deno/*"],
-      "flux-classify": ["deno/index.ts"],
+      "flux-classifyasklngakjwegnkjw/_shims/auto/*": ["deno/_shims/auto/*-deno"],
+      "flux-classifyasklngakjwegnkjw/*": ["deno/*"],
+      "flux-classifyasklngakjwegnkjw": ["deno/index.ts"],
     },
     "noEmit": true,
     "declaration": true,
