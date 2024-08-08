@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Flux from 'flux-classifyasklngakjwegnkjw';
+import Flux from 'flux-classify';
 import { Response } from 'node-fetch';
 
 const client = new Flux({ baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010' });

@@ -7,9 +7,9 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^flux-classifyasklngakjwegnkjw$': '<rootDir>/src/index.ts',
-    '^flux-classifyasklngakjwegnkjw/_shims/auto/(.*)$': '<rootDir>/src/_shims/auto/$1-node',
-    '^flux-classifyasklngakjwegnkjw/(.*)$': '<rootDir>/src/$1',
+    '^flux-classify$': '<rootDir>/src/index.ts',
+    '^flux-classify/_shims/auto/(.*)$': '<rootDir>/src/_shims/auto/$1-node',
+    '^flux-classify/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

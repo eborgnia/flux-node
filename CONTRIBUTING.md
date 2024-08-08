@@ -55,12 +55,12 @@ cd flux-node
 # With yarn
 yarn link
 cd ../my-package
-yarn link flux-classifyasklngakjwegnkjw
+yarn link flux-classify
 
 # With pnpm
 pnpm link --global
 cd ../my-package
-pnpm link -—global flux-classifyasklngakjwegnkjw
+pnpm link -—global flux-classify
 ```
 
 ## Running tests
