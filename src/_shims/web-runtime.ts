@@ -9,9 +9,9 @@ export function getRuntime({ manuallyImported }: { manuallyImported?: boolean } 
   const recommendation =
     manuallyImported ?
       `You may need to use polyfills`
-    : `Add one of these imports before your first \`import … from 'flux'\`:
-- \`import 'flux/shims/node'\` (if you're running on Node)
-- \`import 'flux/shims/web'\` (otherwise)
+    : `Add one of these imports before your first \`import … from 'sunspot-flux'\`:
+- \`import 'sunspot-flux/shims/node'\` (if you're running on Node)
+- \`import 'sunspot-flux/shims/web'\` (otherwise)
 `;
 
   let _fetch, _Request, _Response, _Headers;

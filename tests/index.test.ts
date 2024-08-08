@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Flux from 'flux';
-import { APIUserAbortError } from 'flux';
-import { Headers } from 'flux/core';
+import Flux from 'sunspot-flux';
+import { APIUserAbortError } from 'sunspot-flux';
+import { Headers } from 'sunspot-flux/core';
 import defaultFetch, { Response, type RequestInit, type RequestInfo } from 'node-fetch';
 
 describe('instantiate client', () => {

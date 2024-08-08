@@ -42,11 +42,13 @@ export let isFsReadStream: Shims['isFsReadStream'] | undefined = undefined;
 export function setShims(shims: Shims, options: { auto: boolean } = { auto: false }) {
   if (auto) {
     throw new Error(
-      `you must \`import 'flux/shims/${shims.kind}'\` before importing anything else from flux`,
+      `you must \`import 'sunspot-flux/shims/${shims.kind}'\` before importing anything else from sunspot-flux`,
     );
   }
   if (kind) {
-    throw new Error(`can't \`import 'flux/shims/${shims.kind}'\` after \`import 'flux/shims/${kind}'\``);
+    throw new Error(
+      `can't \`import 'sunspot-flux/shims/${shims.kind}'\` after \`import 'sunspot-flux/shims/${kind}'\``,
+    );
   }
   auto = options.auto;
   kind = shims.kind;

@@ -7,9 +7,9 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^flux$': '<rootDir>/src/index.ts',
-    '^flux/_shims/auto/(.*)$': '<rootDir>/src/_shims/auto/$1-node',
-    '^flux/(.*)$': '<rootDir>/src/$1',
+    '^sunspot-flux$': '<rootDir>/src/index.ts',
+    '^sunspot-flux/_shims/auto/(.*)$': '<rootDir>/src/_shims/auto/$1-node',
+    '^sunspot-flux/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

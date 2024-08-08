@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { toFile, type ResponseLike } from 'flux/uploads';
-import { File } from 'flux/_shims/index';
+import { toFile, type ResponseLike } from 'sunspot-flux/uploads';
+import { File } from 'sunspot-flux/_shims/index';
 
 class MyClass {
   name: string = 'foo';
