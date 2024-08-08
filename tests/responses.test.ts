@@ -1,5 +1,5 @@
-import { createResponseHeaders } from 'flux/core';
-import { Headers } from 'flux/_shims/index';
+import { createResponseHeaders } from 'sunspot-flux/core';
+import { Headers } from 'sunspot-flux/_shims/index';
 
 describe('response parsing', () => {
   // TODO: test unicode characters

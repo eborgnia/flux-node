@@ -6,9 +6,9 @@
     "rootDir": "./deno",
     "lib": ["es2020", "DOM"],
     "paths": {
-      "flux/_shims/auto/*": ["deno/_shims/auto/*-deno"],
-      "flux/*": ["deno/*"],
-      "flux": ["deno/index.ts"],
+      "sunspot-flux/_shims/auto/*": ["deno/_shims/auto/*-deno"],
+      "sunspot-flux/*": ["deno/*"],
+      "sunspot-flux": ["deno/index.ts"],
     },
     "noEmit": true,
     "declaration": true,

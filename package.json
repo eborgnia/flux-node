@@ -1,5 +1,5 @@
 {
-  "name": "flux",
+  "name": "sunspot-flux",
   "version": "0.0.1-alpha.0",
   "description": "The official TypeScript library for the Flux API",
   "author": "Flux <dev-feedback@flux.com>",
@@ -59,8 +59,8 @@
     "./shims/web.mjs"
   ],
   "imports": {
-    "flux": ".",
-    "flux/*": "./src/*"
+    "sunspot-flux": ".",
+    "sunspot-flux/*": "./src/*"
   },
   "exports": {
     "./_shims/auto/*": {

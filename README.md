@@ -1,6 +1,6 @@
 # Flux Node API Library
 
-[![NPM version](https://img.shields.io/npm/v/flux.svg)](https://npmjs.org/package/flux) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/flux)
+[![NPM version](https://img.shields.io/npm/v/sunspot-flux.svg)](https://npmjs.org/package/sunspot-flux) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/sunspot-flux)
 
 This library provides convenient access to the Flux REST API from server-side TypeScript or JavaScript.
 
@@ -15,7 +15,7 @@ npm install git+ssh://git@github.com:stainless-sdks/flux-node.git
 ```
 
 > [!NOTE]
-> Once this package is [published to npm](https://app.stainlessapi.com/docs/guides/publish), this will become: `npm install flux`
+> Once this package is [published to npm](https://app.stainlessapi.com/docs/guides/publish), this will become: `npm install sunspot-flux`
 
 ## Usage
 
@@ -23,7 +23,7 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import Flux from 'flux';
+import Flux from 'sunspot-flux';
 
 const client = new Flux();
 
@@ -40,7 +40,7 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import Flux from 'flux';
+import Flux from 'sunspot-flux';
 
 const client = new Flux();
 
@@ -214,11 +214,11 @@ add the following import before your first import `from "Flux"`:
 ```ts
 // Tell TypeScript and the package to use the global web fetch instead of node-fetch.
 // Note, despite the name, this does not add any polyfills, but expects them to be provided if needed.
-import 'flux/shims/web';
-import Flux from 'flux';
+import 'sunspot-flux/shims/web';
+import Flux from 'sunspot-flux';
 ```
 
-To do the inverse, add `import "flux/shims/node"` (which does import polyfills).
+To do the inverse, add `import "sunspot-flux/shims/node"` (which does import polyfills).
 This can also be useful if you are getting the wrong TypeScript types for `Response` ([more details](https://github.com/stainless-sdks/flux-node/tree/main/src/_shims#readme)).
 
 ### Logging and middleware
@@ -228,7 +228,7 @@ which can be used to inspect or alter the `Request` or `Response` before/after e
 
 ```ts
 import { fetch } from 'undici'; // as one example
-import Flux from 'flux';
+import Flux from 'sunspot-flux';
 
 const client = new Flux({
   fetch: async (url: RequestInfo, init?: RequestInit): Promise<Response> => {
