@@ -139,13 +139,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['FLUX_BASE_URL'] = ''; // empty
       const client = new Flux({});
-      expect(client.baseURL).toEqual('https://localhost:8080/test-api');
+      expect(client.baseURL).toEqual('https://api.itsflux.com');
     });
 
     test('blank env variable', () => {
       process.env['FLUX_BASE_URL'] = '  '; // blank
       const client = new Flux({});
-      expect(client.baseURL).toEqual('https://localhost:8080/test-api');
+      expect(client.baseURL).toEqual('https://api.itsflux.com');
     });
   });
 
