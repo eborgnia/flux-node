@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2024-08-08)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/squack-io/flux-node/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Chores
+
+* **internal:** version bump ([#15](https://github.com/squack-io/flux-node/issues/15)) ([d0ed37a](https://github.com/squack-io/flux-node/commit/d0ed37ab95fa80af6316b33b04d72e827977f719))
+
 ## 0.1.0-alpha.3 (2024-08-08)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/squack-io/flux-node/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
