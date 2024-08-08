@@ -1,5 +1,5 @@
-import { createResponseHeaders } from 'flux-client/core';
-import { Headers } from 'flux-client/_shims/index';
+import { createResponseHeaders } from 'flux-classify/core';
+import { Headers } from 'flux-classify/_shims/index';
 
 describe('response parsing', () => {
   // TODO: test unicode characters

@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "flux-client/*": ["dist/src/*"],
-      "flux-client": ["dist/src/index.ts"],
+      "flux-classify/*": ["dist/src/*"],
+      "flux-classify": ["dist/src/index.ts"],
     },
     "noEmit": false,
     "declaration": true,
