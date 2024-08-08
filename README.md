@@ -1,6 +1,6 @@
 # Flux Node API Library
 
-[![NPM version](https://img.shields.io/npm/v/sunspot-flux.svg)](https://npmjs.org/package/sunspot-flux) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/sunspot-flux)
+[![NPM version](https://img.shields.io/npm/v/flux-client.svg)](https://npmjs.org/package/flux-client) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/flux-client)
 
 This library provides convenient access to the Flux REST API from server-side TypeScript or JavaScript.
 
@@ -11,11 +11,8 @@ It is generated with [Stainless](https://www.stainlessapi.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:stainless-sdks/flux-node.git
+npm install flux-client
 ```
-
-> [!NOTE]
-> Once this package is [published to npm](https://app.stainlessapi.com/docs/guides/publish), this will become: `npm install sunspot-flux`
 
 ## Usage
 
@@ -23,7 +20,7 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import Flux from 'sunspot-flux';
+import Flux from 'flux-client';
 
 const client = new Flux();
 
@@ -40,7 +37,7 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import Flux from 'sunspot-flux';
+import Flux from 'flux-client';
 
 const client = new Flux();
 
@@ -214,12 +211,12 @@ add the following import before your first import `from "Flux"`:
 ```ts
 // Tell TypeScript and the package to use the global web fetch instead of node-fetch.
 // Note, despite the name, this does not add any polyfills, but expects them to be provided if needed.
-import 'sunspot-flux/shims/web';
-import Flux from 'sunspot-flux';
+import 'flux-client/shims/web';
+import Flux from 'flux-client';
 ```
 
-To do the inverse, add `import "sunspot-flux/shims/node"` (which does import polyfills).
-This can also be useful if you are getting the wrong TypeScript types for `Response` ([more details](https://github.com/stainless-sdks/flux-node/tree/main/src/_shims#readme)).
+To do the inverse, add `import "flux-client/shims/node"` (which does import polyfills).
+This can also be useful if you are getting the wrong TypeScript types for `Response` ([more details](https://github.com/squack-io/flux-node/tree/main/src/_shims#readme)).
 
 ### Logging and middleware
 
@@ -228,7 +225,7 @@ which can be used to inspect or alter the `Request` or `Response` before/after e
 
 ```ts
 import { fetch } from 'undici'; // as one example
-import Flux from 'sunspot-flux';
+import Flux from 'flux-client';
 
 const client = new Flux({
   fetch: async (url: RequestInfo, init?: RequestInit): Promise<Response> => {
@@ -278,7 +275,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/flux-node/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/squack-io/flux-node/issues) with questions, bugs, or suggestions.
 
 ## Requirements
 

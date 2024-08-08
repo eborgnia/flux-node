@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "sunspot-flux/*": ["dist/src/*"],
-      "sunspot-flux": ["dist/src/index.ts"],
+      "flux-client/*": ["dist/src/*"],
+      "flux-client": ["dist/src/index.ts"],
     },
     "noEmit": false,
     "declaration": true,

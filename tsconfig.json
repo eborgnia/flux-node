@@ -9,9 +9,9 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "sunspot-flux/_shims/auto/*": ["src/_shims/auto/*-node"],
-      "sunspot-flux/*": ["src/*"],
-      "sunspot-flux": ["src/index.ts"],
+      "flux-client/_shims/auto/*": ["src/_shims/auto/*-node"],
+      "flux-client/*": ["src/*"],
+      "flux-client": ["src/index.ts"],
     },
     "noEmit": true,
 
