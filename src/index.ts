@@ -99,7 +99,6 @@ export class Flux extends Core.APIClient {
     this._options = options;
   }
 
-  root: API.Root = new API.Root(this);
   classifications: API.Classifications = new API.Classifications(this);
 
   /**
@@ -168,8 +167,6 @@ export namespace Flux {
 
   export import ClassifyResponse = API.ClassifyResponse;
   export import ClassifyParams = API.ClassifyParams;
-
-  export import Root = API.Root;
 
   export import Classifications = API.Classifications;
   export import ClassificationResponse = API.ClassificationResponse;
