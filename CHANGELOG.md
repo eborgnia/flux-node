@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 (2024-08-09)
+
+Full Changelog: [v1.0.0...v1.0.1](https://github.com/squack-io/flux-node/compare/v1.0.0...v1.0.1)
+
+### Chores
+
+* **ci:** bump prism mock server version ([#28](https://github.com/squack-io/flux-node/issues/28)) ([9d193f6](https://github.com/squack-io/flux-node/commit/9d193f673dd7fdad66aed700dd452be9d096c43e))
+* **ci:** minor changes ([#26](https://github.com/squack-io/flux-node/issues/26)) ([0d7270b](https://github.com/squack-io/flux-node/commit/0d7270b810c6cc460aba8f5249efa8d7e9c9ffd6))
+
 ## 1.0.0 (2024-08-09)
 
 Full Changelog: [v0.1.0-alpha.4...v1.0.0](https://github.com/squack-io/flux-node/compare/v0.1.0-alpha.4...v1.0.0)
