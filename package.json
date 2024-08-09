@@ -1,6 +1,6 @@
 {
   "name": "flux-client",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.4",
   "description": "The official TypeScript library for the Flux API",
   "author": "Flux <eborgnia@squack.io>",
   "types": "dist/index.d.ts",
@@ -59,8 +59,8 @@
     "./shims/web.mjs"
   ],
   "imports": {
-    "flux-classify": ".",
-    "flux-classify/*": "./src/*"
+    "flux-client": ".",
+    "flux-client/*": "./src/*"
   },
   "exports": {
     "./_shims/auto/*": {

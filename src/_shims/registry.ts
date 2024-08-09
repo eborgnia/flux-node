@@ -42,12 +42,12 @@ export let isFsReadStream: Shims['isFsReadStream'] | undefined = undefined;
 export function setShims(shims: Shims, options: { auto: boolean } = { auto: false }) {
   if (auto) {
     throw new Error(
-      `you must \`import 'flux-classify/shims/${shims.kind}'\` before importing anything else from flux-classify`,
+      `you must \`import 'flux-client/shims/${shims.kind}'\` before importing anything else from flux-client`,
     );
   }
   if (kind) {
     throw new Error(
-      `can't \`import 'flux-classify/shims/${shims.kind}'\` after \`import 'flux-classify/shims/${kind}'\``,
+      `can't \`import 'flux-client/shims/${shims.kind}'\` after \`import 'flux-client/shims/${kind}'\``,
     );
   }
   auto = options.auto;
