@@ -20,7 +20,7 @@ or products provided by Flux please follow the respective company's security rep
 
 ### Flux Terms and Policies
 
-Please contact dev-feedback@flux.com for any questions or concerns regarding security of our services.
+Please contact eborgnia@squack.io for any questions or concerns regarding security of our services.
 
 ---
 
