@@ -10,14 +10,6 @@ Methods:
 
 # Root
 
-Types:
-
-- <code><a href="./src/resources/root.ts">RootRetrieveResponse</a></code>
-
-Methods:
-
-- <code title="get /">client.root.<a href="./src/resources/root.ts">retrieve</a>() -> string</code>
-
 # Classifications
 
 Types:
