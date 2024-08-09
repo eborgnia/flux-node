@@ -2,4 +2,3 @@
 
 export { ClassificationResponse, Classifications } from './classifications';
 export { ClassifyResponse, ClassifyParams } from './top-level';
-export { RootRetrieveResponse, Root } from './root';
