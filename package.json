@@ -2,7 +2,7 @@
   "name": "flux-client",
   "version": "0.1.0-alpha.4",
   "description": "The official TypeScript library for the Flux API",
-  "author": "Flux <dev-feedback@flux.com>",
+  "author": "Flux <eborgnia@squack.io>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
