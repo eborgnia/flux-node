@@ -8,8 +8,6 @@ Methods:
 
 - <code title="post /classify">client.<a href="./src/index.ts">classify</a>({ ...params }) -> ClassifyResponse</code>
 
-# Root
-
 # Classifications
 
 Types:
