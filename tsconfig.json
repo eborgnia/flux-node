@@ -9,9 +9,9 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "flux-classify/_shims/auto/*": ["src/_shims/auto/*-node"],
-      "flux-classify/*": ["src/*"],
-      "flux-classify": ["src/index.ts"],
+      "flux-client/_shims/auto/*": ["src/_shims/auto/*-node"],
+      "flux-client/*": ["src/*"],
+      "flux-client": ["src/index.ts"],
     },
     "noEmit": true,
 
