@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.5 (2024-08-09)
+
+Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/squack-io/flux-node/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
+
+### Features
+
+* **api:** update via SDK Studio ([#19](https://github.com/squack-io/flux-node/issues/19)) ([ece2660](https://github.com/squack-io/flux-node/commit/ece26609574ecf545ff0561571b5dc777e3160c1))
+
 ## 0.1.0-alpha.4 (2024-08-08)
 
 Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/squack-io/flux-node/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
