@@ -170,7 +170,6 @@ export namespace Flux {
   export import ClassifyParams = API.ClassifyParams;
 
   export import Root = API.Root;
-  export import RootRetrieveResponse = API.RootRetrieveResponse;
 
   export import Classifications = API.Classifications;
   export import ClassificationResponse = API.ClassificationResponse;
