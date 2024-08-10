@@ -5,6 +5,8 @@ import * as ClassificationsAPI from './classifications';
 
 export type ClassifyResponse = Array<ClassificationsAPI.ClassificationResponse>;
 
+export type DummyResponse = unknown;
+
 export interface ClassifyParams {
   input: string | Array<string>;
 
@@ -13,5 +15,6 @@ export interface ClassifyParams {
 
 export namespace TopLevel {
   export import ClassifyResponse = TopLevelAPI.ClassifyResponse;
+  export import DummyResponse = TopLevelAPI.DummyResponse;
   export import ClassifyParams = TopLevelAPI.ClassifyParams;
 }
