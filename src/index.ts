@@ -111,6 +111,13 @@ export class Flux extends Core.APIClient {
     return this.post('/classify', { body, ...options });
   }
 
+  /**
+   * Dummy Route
+   */
+  dummy(options?: Core.RequestOptions): Core.APIPromise<unknown> {
+    return this.get('/dummy', options);
+  }
+
   protected override defaultQuery(): Core.DefaultQuery | undefined {
     return this._options.defaultQuery;
   }
@@ -166,6 +173,7 @@ export namespace Flux {
   export import RequestOptions = Core.RequestOptions;
 
   export import ClassifyResponse = API.ClassifyResponse;
+  export import DummyResponse = API.DummyResponse;
   export import ClassifyParams = API.ClassifyParams;
 
   export import Classifications = API.Classifications;
