@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 (2024-08-10)
+
+Full Changelog: [v1.1.0...v1.2.0](https://github.com/squack-io/flux-node/compare/v1.1.0...v1.2.0)
+
+### Features
+
+* **api:** update OpenAPI spec ([#32](https://github.com/squack-io/flux-node/issues/32)) ([def429d](https://github.com/squack-io/flux-node/commit/def429d97c660f651b86fa73925e4b014ebb17a1))
+
 ## 1.1.0 (2024-08-09)
 
 Full Changelog: [v1.0.1...v1.1.0](https://github.com/squack-io/flux-node/compare/v1.0.1...v1.1.0)
